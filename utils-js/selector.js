@@ -1,4 +1,4 @@
-const get = (selection) => {
+export const get = (selection) => {
   const elements = [...document.querySelectorAll(selection)];
   if (elements.length > 1) return elements;
 
@@ -10,5 +10,3 @@ const get = (selection) => {
   if (element) return element;
   throw new Error(`"${selection}" not found`);
 };
-
-export default getElement;

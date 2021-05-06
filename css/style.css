@@ -328,13 +328,12 @@ template {
   perspective: 800px; }
 
 .cube {
-  transition: transform 2s ease-in-out;
   width: 200px;
   height: 200px;
   transform-style: preserve-3d; }
 
 .cube:hover {
-  transform: rotate3d(1, 1, 0, -270deg); }
+  transform: rotate3d(1, 0, 0, -270deg); }
 
 .front,
 .back,
